@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator BMI</h1>
+
+    <div class="field">
+      <img src="ruler.png">
+      <input type="text" id="height">
+      cm
+    </div>
+
+    <div class="field">
+      <img src="weight.png">
+      <input type="text" id="weight">
+      kg
+    </div>
+
+    <button id="button">Sprawdź</button>
+
+    <div id="result" class="hidden">
+      <p class="lead">
+        Twój wynik to
+        <b id="result-bmi"></b>
+        <span id="result-category"></span>
+      </p>
+
+      <p>
+        Dla twojego wzrostu prawidłowa waga wynosi pomiędzy
+        <span id="limit-min"></span>
+        a
+        <span id="limit-max"></span>
+        kg
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
