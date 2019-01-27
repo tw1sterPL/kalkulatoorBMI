@@ -18,8 +18,8 @@ function buttonClick() {
 
   resultBMI.innerText = bmi.toFixed(2)
 
-  if (bmi < 13) {
-    resultCategory.innerText = '- jedź na SOR'
+  if (bmi <= 13) {
+    resultCategory.innerText = '- kwalifikujesz się na SOR!'
   } else if (bmi < 18.5) {
     resultCategory.innerText = '- chudy ale byk'
   } else if (bmi >= 25) {
