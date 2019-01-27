@@ -18,12 +18,14 @@ function buttonClick() {
 
   resultBMI.innerText = bmi.toFixed(2)
 
-  if (bmi < 18.5) {
-    resultCategory.innerText = 'chudy ale byk'
+  if (bmi < 13) {
+    resultCategory.innerText = '- jedź na SOR'
+  } else if (bmi < 18.5) {
+    resultCategory.innerText = '- chudy ale byk'
   } else if (bmi >= 25) {
-    resultCategory.innerText = 'jesteś zbyt ulany'
+    resultCategory.innerText = '- jesteś zbyt ulany'
   } else {
-    resultCategory.innerText = 'waga OK'
+    resultCategory.innerText = '- ani za chudy ani za gruby'
   }
 
   var min = Math.round(18.5 * height * height)
